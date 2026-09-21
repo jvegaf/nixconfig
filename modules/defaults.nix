@@ -1,15 +1,33 @@
-{ lib, den, ... }:
+{ den, __findFile, ... }:
 {
-  den.default.nixos.system.stateVersion = "26.05";
-  den.default.homeManager.home.stateVersion = "26.05";
+  den.default = {
+    includes = [
+      <den/define-user>
+      <den/hostname>
+      <den/mutual-provider>
+    ];
 
-  # enable hm by default
-  den.schema.user.classes = lib.mkDefault [ "homeManager" ];
+    nixos = {
+      system.stateVersion = "26.11";
 
-  # User TODO: REMOVE THIS
-  # den.aspects.tux.nixos = {
-  #   boot.loader.grub.enable = false;
-  #   fileSystems."/".device = "/dev/fake";
-  #   fileSystems."/".fsType = "auto";
-  # };
+      nixpkgs.config.allowUnfree = true;
+      nix.settings.experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
+
+      home-manager = {
+        backupFileExtension = "backup";
+        useUserPackages = true;
+        useGlobalPkgs = true;
+      };
+    };
+
+    homeManager = {
+      home = {
+        stateVersion = "26.11";
+      };
+    };
+
+  };
 }

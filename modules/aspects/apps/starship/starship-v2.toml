@@ -1,0 +1,28 @@
+add_newline = false
+format = "$hostname$character"
+right_format = "[ $directory $git_branch](bg:bg_color fg:fg_color)"
+
+palette = "packet"
+
+[palettes.packet]
+bg_color = "#38528a"
+fg_color = "#fdb00b"
+brand = "#4d6fb7"
+
+[character]
+success_symbol = "[󰘧](fg:brand)"
+error_symbol = "[󰘧](fg:fg_color)"
+format = "$symbol "
+
+[directory]
+format = "$path"
+truncation_length = 1
+
+[git_branch]
+format = "\\[$branch\\] "
+
+[hostname]
+ssh_only = true
+ssh_symbol = "󱘖"
+format = "[ $ssh_symbol $hostname ](bg:bg_color fg:fg_color) "
+trim_at = "."
