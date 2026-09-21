@@ -2,11 +2,11 @@
 {
   # nh exposition
   # https://den.denful.dev/reference/lib/#denlibnh
-  perSystem =
-    { pkgs, ... }:
-    {
-      packages = den.lib.nh.denPackages { fromFlake = true; } pkgs;
-    };
+  # perSystem =
+  #   { pkgs, ... }:
+  #   {
+  #     packages = den.lib.nh.denPackages { fromFlake = true; } pkgs;
+  #   };
 
   pkt.nix = {
     nixos =
