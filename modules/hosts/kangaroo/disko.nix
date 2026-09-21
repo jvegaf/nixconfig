@@ -33,20 +33,7 @@
                     mountpoint = "/";
                   };
                 };
-              }
-              // (
-                if swapSize == null then
-                  { }
-                else
-                  {
-                    swap = {
-                      size = swapSize;
-                      content = {
-                        type = "swap";
-                      };
-                    };
-                  }
-              );
+              };
             };
           };
         };
