@@ -22,6 +22,10 @@
     niri-nix.url = "git+https://codeberg.org/BANanaD3V/niri-nix";
     nix-flatpak.url = "github:gmodena/nix-flatpak/";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     noctalia.url = "github:noctalia-dev/noctalia";
     noctalia-greeter = {
       url = "github:noctalia-dev/noctalia-greeter";

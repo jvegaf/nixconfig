@@ -17,6 +17,8 @@
           nixd
           nixfmt
           nvd
+          nvfetcher
+          nix-output-monitor
         ];
 
         # https://wiki.nixos.org/wiki/Nix-ld
