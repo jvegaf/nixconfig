@@ -93,9 +93,6 @@
         Z = { Z = ":wbc" }
       '';
 
-      home.sessionVariables = {
-        EDITOR = "hx";
-      };
     };
   };
 }

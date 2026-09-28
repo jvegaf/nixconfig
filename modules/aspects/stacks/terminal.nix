@@ -10,6 +10,7 @@
       <pkt/helix>
       <pkt/starship>
       <pkt/zellij>
+      <pkt/neovim>
     ];
 
     homeManager =
