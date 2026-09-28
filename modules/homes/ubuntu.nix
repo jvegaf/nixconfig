@@ -1,6 +1,6 @@
 { den, __findFile, ... }:
 {
-  # Copy of packet.nix for systems where packet is not available
+  # Copy of th3g3ntl3man.nix for systems where th3g3ntl3man is not available
   den.homes.x86_64-linux.ubuntu = { };
   den.homes.aarch64-linux.ubuntu = { };
 

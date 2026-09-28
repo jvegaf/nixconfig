@@ -1,21 +1,21 @@
-{ den, ... }:
+{ den, __findFile, ... }:
 {
-  # user aspect
   den.aspects.th3g3ntl3man = {
     includes = [
-      den.batteries.define-user
-      den.batteries.primary-user
-      (den.batteries.user-shell "fish")
+      <den/primary-user>
+      (<den/user-shell> "fish")
     ];
 
-    homeManager =
-      { pkgs, ... }:
-      {
-        home.packages = [ pkgs.htop ];
-      };
+    nixos = {
+      users.users.th3g3ntl3man = {
+        isNormalUser = true;
+        description = "The Gentleman";
 
-    # user can provide NixOS configurations
-    # to any host it is included on
-    provides.to-hosts.nixos = { pkgs, ... }: { };
+        # openssh.authorizedKeys.keys = [
+        #   "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJSHAzMVnHblW0xy4tdMxCZBpEsDRlh+khOMmYzJs5K/"
+        # ];
+      };
+    };
+
   };
 }

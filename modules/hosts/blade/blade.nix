@@ -6,14 +6,14 @@
 }:
 {
   # ASUS AMD Gaming Desktop
-  den.hosts.x86_64-linux.kangaroo = {
+  den.hosts.x86_64-linux.blade = {
     users.th3g3ntl3man.classes = [ "homeManager" ];
   };
 
-  den.aspects.kangaroo = {
+  den.aspects.blade = {
     includes = [
-      den.aspects.kangaroo-computer
-      den.aspects.kangaroo-disko
+      den.aspects.blade-computer
+      den.aspects.blade-disko
     ];
 
     provides.th3g3ntl3man = {
@@ -40,8 +40,6 @@
     nixos =
       { pkgs, lib, ... }:
       {
-        users.users.root.initialHashedPassword = lib.mkForce "$6$VdmHd0tV.cMZDMFC$CtdGlVaV/hPaZsIUoNqLNgOwmoYtEdqubc4FU3117Vz34LXl74uF6KOydC64LjOamMSd3X1a5AdI53mZOtRZv1";
-
         environment = {
           systemPackages = with pkgs; [
 
@@ -85,12 +83,6 @@
               done
 
               /etc/profiles/per-user/th3g3ntl3man/bin/Telegram &
-              /etc/profiles/per-user/th3g3ntl3man/bin/discord &
-              /etc/profiles/per-user/th3g3ntl3man/bin/discordptb &
-              /etc/profiles/per-user/th3g3ntl3man/bin/discordcanary &
-              /etc/profiles/per-user/th3g3ntl3man/bin/signal-desktop &
-              /etc/profiles/per-user/th3g3ntl3man/bin/cider-2 &
-              /etc/profiles/per-user/th3g3ntl3man/bin/thunderbird &
             '';
           };
         };

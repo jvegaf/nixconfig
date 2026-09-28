@@ -30,9 +30,9 @@
             format = "$hostname$character";
             right_format = "[ $directory $git_branch](bg:${starshipBgColor} fg:fg_color)";
 
-            palette = "packet";
+            palette = "th3g3ntl3man";
 
-            palettes.packet = {
+            palettes.th3g3ntl3man = {
               bg_color = "#38528a";
               fg_color = "#fdb00b";
               brand = "#4d6fb7";

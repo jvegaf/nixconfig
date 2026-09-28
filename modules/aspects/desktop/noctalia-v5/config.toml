@@ -548,7 +548,7 @@ panel_open_near_click = true
 panel_position = "auto"
 
 [plugin_settings."noctalia/wallhaven"]
-download_dir = "/home/packet/Pictures/Wallpapers/wallhaven"
+download_dir = "/home/th3g3ntl3man/Pictures/Wallpapers/wallhaven"
 
 [plugin_settings."rylos/tailnet"]
 panel_placement = "floating"
@@ -578,7 +578,7 @@ enabled = [
 
 [shell]
 app_icon_colorize = false
-avatar_path = "/home/packet/Pictures/nixconfig-avatars/crow.png"
+avatar_path = "/home/th3g3ntl3man/Pictures/nixconfig-avatars/crow.png"
 button_borders = true
 card_borders = true
 clipboard_auto_paste = "auto"
@@ -677,7 +677,7 @@ time_format = "{:%-I:%M %p}"
     close_on_copy = true
     confirm_region = true
     copy_to_clipboard = true
-    directory = "/home/packet/Pictures/Screenshots"
+    directory = "/home/th3g3ntl3man/Pictures/Screenshots"
     filename_pattern = "screenshot-%Y-%m-%d-%H-%M-%S"
     freeze_screen = true
     pipe_command = ""
@@ -808,7 +808,7 @@ wallpaper_scheme = "m3-tonal-spot"
     enable_community_templates = true
 
 [wallpaper]
-directory = "/home/packet/Pictures/Wallpapers"
+directory = "/home/th3g3ntl3man/Pictures/Wallpapers"
 directory_dark = ""
 directory_light = ""
 edge_smoothness = 0.30000001192092896

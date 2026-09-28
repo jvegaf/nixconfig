@@ -7,8 +7,6 @@
       <pkt/git>
       <pkt/gpg>
       <pkt/keyd>
-      <pkt/postgresql>
-      <pkt/wireshark>
     ];
 
     nixos =
