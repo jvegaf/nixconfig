@@ -7,6 +7,7 @@
       <pkt/git>
       <pkt/gpg>
       <pkt/keyd>
+      <pkt/lazygit>
     ];
 
     nixos =
@@ -21,7 +22,6 @@
           dnsutils
           ffmpeg
           github-cli
-          lazygit
           jq
           ookla-speedtest
           texliveFull

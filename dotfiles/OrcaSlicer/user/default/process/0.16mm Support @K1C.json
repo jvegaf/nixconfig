@@ -1,0 +1,24 @@
+{
+	"enable_prime_tower": "0",
+	"enable_support": "1",
+	"from": "User",
+	"inherits": "0.16mm Optimal @Creality K1C",
+	"name": "0.16mm Support @K1C",
+	"precise_z_height": "1",
+	"print_extruder_id": [
+		"1"
+	],
+	"print_extruder_variant": [
+		"Direct Drive Standard"
+	],
+	"print_settings_id": "0.16mm Support @K1C",
+	"sparse_infill_pattern": "gyroid",
+	"support_base_pattern_spacing": "3.5",
+	"support_object_xy_distance": "1",
+	"support_on_build_plate_only": "1",
+	"support_style": "organic",
+	"support_type": "tree(auto)",
+	"tree_support_wall_count": "1",
+	"version": "2.3.2.75",
+	"wall_loops": "3"
+}

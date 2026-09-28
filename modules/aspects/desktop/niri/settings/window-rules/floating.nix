@@ -19,7 +19,18 @@
           };
         }
 
-        # Steam Notifications Bottom Right Corner
+        {
+          match._props.app-id = "1password";
+          open-floating = true;
+          default-column-width.proportion = 0.6;
+          default-window-height.proportion = 0.6;
+
+          default-floating-position._props = {
+            x = 410;
+            y = 222;
+            relative-to = "top-left";
+          };
+        }
         {
           match._props.app-id = "org.gnome.Nautilus";
           open-floating = true;

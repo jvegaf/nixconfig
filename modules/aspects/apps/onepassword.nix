@@ -1,0 +1,30 @@
+{
+  pkt.onepassword = {
+    nixos =
+      { pkgs, user, ... }:
+      {
+        environment.systemPackages = with pkgs; [
+          _1password-gui
+        ];
+
+        programs._1password.enable = true;
+        programs._1password-gui = {
+          enable = true;
+          # Certain features, including CLI integration and system authentication support,
+          # require enabling PolKit integration on some desktop environments (e.g. Plasma).
+          # polkitPolicyOwners = [ "${user}" ];
+          polkitPolicyOwners = [ "${user.userName}" ];
+        };
+
+        environment.etc = {
+          "1password/custom_allowed_browsers" = {
+            text = ''
+              firefox
+              chromium
+            '';
+            mode = "0755";
+          };
+        };
+      };
+  };
+}

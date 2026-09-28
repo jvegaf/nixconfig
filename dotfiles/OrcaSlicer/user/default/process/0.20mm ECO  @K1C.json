@@ -1,0 +1,20 @@
+{
+	"enable_prime_tower": "0",
+	"from": "User",
+	"inherits": "0.20mm Standard @Creality K1C",
+	"name": "0.20mm ECO  @K1C",
+	"precise_z_height": "1",
+	"print_extruder_id": [
+		"1"
+	],
+	"print_extruder_variant": [
+		"Direct Drive Standard"
+	],
+	"print_settings_id": "0.20mm ECO  @K1C",
+	"seam_slope_conditional": "1",
+	"seam_slope_type": "external",
+	"sparse_infill_density": "10%",
+	"sparse_infill_pattern": "gyroid",
+	"version": "2.3.2.75",
+	"xy_hole_compensation": "0.05"
+}

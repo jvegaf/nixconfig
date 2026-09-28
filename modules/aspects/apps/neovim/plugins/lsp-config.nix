@@ -6,73 +6,101 @@
     homeManager = {
       programs.nixvim = {
 
-        plugins = {
-          lsp.enable = true;
-          lsp.servers = {
-            lua_ls.enable = true;
-            ts_ls.enable = true;
-            eslint.enable = true;
+
+        lsp = {
+          servers = {
+            bashls.enable = true;
+            basedpyright.enable = true;
+            clangd.enable = true;
             cssls.enable = true;
+            # gopls.enable = true;
+            jdtls.enable = true;
             html.enable = true;
+            jsonls.enable = true;
+            just.enable = true;
+            lemminx.enable = true;
+            lua_ls.enable = true;
+            nil_ls.enable = true;
+            nixd = {
+              enable = true;
+            };
+            marksman.enable = false;
+            markdown_oxide.enable = false;
+            pylsp.enable = true;
+            ruff.enable = true;
+            statix.enable = true;
+            taplo.enable = true;
+            texlab.enable = false;
+            yamlls.enable = true;
+            # zls.enable = true;  # XXX: broken
           };
+
+          keymaps = [
+            {
+              key = "gd";
+              lspBufAction = "definition";
+            }
+            {
+              key = "gt";
+              lspBufAction = "type_definition";
+            }
+            {
+              key = "gi";
+              lspBufAction = "implementation";
+            }
+            {
+              key = "K";
+              lspBufAction = "hover";
+            }
+            {
+              key = "<leader>k";
+              action.__raw = "function() vim.diagnostic.jump({ count=-1, float=true }) end";
+            }
+            {
+              key = "<leader>j";
+              action.__raw = "function() vim.diagnostic.jump({ count=1, float=true }) end";
+            }
+            {
+              key = "<leader>lx";
+              action = "<CMD>LspStop<Enter>";
+            }
+            {
+              key = "<leader>ls";
+              action = "<CMD>LspStart<Enter>";
+            }
+            {
+              key = "<leader>lr";
+              action = "<CMD>LspRestart<Enter>";
+            }
+            {
+              key = "rn";
+              lspBufAction = "rename";
+            }
+            {
+              key = "ca";
+              lspBufAction = "code_action";
+            }
+          ];
         };
 
-        keymaps = [
-          {
-            mode = "n";
-            key = "<leader>g";
-            action = "";
-            options.desc = "LSP";
-          }
-          {
-            mode = "n";
-            key = "K";
-            action.__raw = "vim.lsp.buf.hover";
-            options.desc = "Hover";
-          }
-          {
-            mode = "n";
-            key = "<leader>gK";
-            action.__raw = "vim.lsp.buf.hover";
-            options.desc = "Hover";
-          }
-          {
-            mode = "n";
-            key = "gd";
-            action.__raw = "vim.lsp.buf.definition";
-            options.desc = "Go to definition";
-          }
-          {
-            mode = "n";
-            key = "<leader>gd";
-            action.__raw = "vim.lsp.buf.definition";
-            options.desc = "Go to definition";
-          }
-          {
-            mode = "n";
-            key = "<leader>gr";
-            action.__raw = "vim.lsp.buf.references";
-            options.desc = "Go to references";
-          }
-          {
-            mode = [
-              "n"
-              "v"
-            ];
-            key = "<leader>c";
-            action = "";
-            options.desc = "Code";
-          }
-          {
-            mode = [
-              "n"
-              "v"
-            ];
-            key = "<leader>ca";
-            action.__raw = "vim.lsp.buf.code_action";
-            options.desc = "Code Action";
-          }
-        ];
+        plugins = {
+          lsp.enable = true;
+          rustaceanvim = {
+            enable = false;
+            settings.server = {
+              standalone = false;
+            };
+          };
+          typescript-tools = {
+            enable = true;
+            settings.settings = {
+              expose_as_code_action = "all";
+            };
+          };
+          jdtls.enable = true;
+          # otter.enable = true;
+        };
+
       };
     };
   };

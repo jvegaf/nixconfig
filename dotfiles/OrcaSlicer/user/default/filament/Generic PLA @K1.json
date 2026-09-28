@@ -1,0 +1,27 @@
+{
+	"cool_plate_temp": [
+		"65"
+	],
+	"cool_plate_temp_initial_layer": [
+		"65"
+	],
+	"filament_extruder_variant": [
+		"Direct Drive Standard"
+	],
+	"filament_settings_id": [
+		"Generic PLA @K1"
+	],
+	"from": "User",
+	"hot_plate_temp": [
+		"65"
+	],
+	"hot_plate_temp_initial_layer": [
+		"65"
+	],
+	"inherits": "Creality Generic PLA @K1-all",
+	"name": "Generic PLA @K1",
+	"nozzle_temperature": [
+		"215"
+	],
+	"version": "2.3.2.60"
+}

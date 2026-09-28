@@ -1,0 +1,21 @@
+{
+	"default_filament_colour": [
+		"#C01C28"
+	],
+	"filament_extruder_variant": [
+		"Direct Drive Standard"
+	],
+	"filament_settings_id": [
+		"CR-TPU @K1C"
+	],
+	"from": "User",
+	"inherits": "CR-TPU @K1C-all",
+	"name": "CR-TPU @K1C",
+	"nozzle_temperature": [
+		"235"
+	],
+	"nozzle_temperature_initial_layer": [
+		"235"
+	],
+	"version": "2.3.2.75"
+}

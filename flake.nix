@@ -32,5 +32,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     pixie-sddm.url = "github:xCaptaiN09/pixie-sddm";
+    yazi = {
+      url = "github:sxyazi/yazi";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }

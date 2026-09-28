@@ -11,6 +11,8 @@
       <pkt/starship>
       <pkt/zellij>
       <pkt/neovim>
+      <pkt/yazi>
+      <pkt/ns>
     ];
 
     homeManager =
@@ -20,7 +22,6 @@
           fd
           fzf
           timg
-          yazi
         ];
       };
 

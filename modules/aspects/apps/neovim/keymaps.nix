@@ -106,21 +106,16 @@
           {
             mode = [
               "n"
-              "v"
             ];
-            key = "<leader>Y";
-            action = ''"+Y'';
-            options.desc = "yank to clipboard line";
+            key = "vv";
+            action = "V";
           }
-          # Delete into system clipboard
           {
             mode = [
               "n"
-              "v"
             ];
-            key = "<leader>d";
-            action = ''"+d'';
-            options.desc = "delete to clipboard motion";
+            key = "W";
+            action = ":w<cr>";
           }
           {
             mode = [
@@ -147,22 +142,9 @@
           # Close current buffer
           {
             mode = "n";
-            key = "<leader>bd";
+            key = "Q";
             action = ":bd<CR>";
             options.desc = "Close current buffer";
-          }
-          # Sort
-          {
-            mode = "v";
-            key = "<leader>s";
-            action = ":sort<CR>";
-            options.desc = "Sort visual selection";
-          }
-          {
-            mode = "v";
-            key = "<leader>S";
-            action = ":sort!<CR>";
-            options.desc = "Sort visual selection in reverse";
           }
         ];
      };

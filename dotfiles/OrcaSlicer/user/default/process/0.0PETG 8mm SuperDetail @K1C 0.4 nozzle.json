@@ -1,0 +1,14 @@
+{
+	"from": "User",
+	"inherits": "0.08mm SuperDetail @Creality K1C 0.4 nozzle",
+	"name": "0.0PETG 8mm SuperDetail @K1C 0.4 nozzle",
+	"print_extruder_id": [
+		"1"
+	],
+	"print_extruder_variant": [
+		"Direct Drive Standard"
+	],
+	"print_settings_id": "0.0PETG 8mm SuperDetail @K1C 0.4 nozzle",
+	"version": "2.3.2.75",
+	"wall_loops": "3"
+}
