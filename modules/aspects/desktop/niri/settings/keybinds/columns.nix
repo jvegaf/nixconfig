@@ -43,11 +43,8 @@
         # Expel/Consume Columns
         "Mod+V".toggle-window-floating = [ ];
         "Mod+Shift+V".switch-focus-between-floating-and-tiling = [ ];
-        "Mod+W".toggle-column-tabbed-display = [ ];
         "Mod+BracketLeft".consume-or-expel-window-left = [ ];
         "Mod+BracketRight".consume-or-expel-window-right = [ ];
-        "Mod+Comma".consume-window-into-column = [ ];
-        "Mod+Period".expel-window-from-column = [ ];
 
         # HJKLUI Binds
         "Mod+H".focus-column-left = [ ];

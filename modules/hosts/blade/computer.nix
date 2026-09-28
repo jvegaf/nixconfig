@@ -9,11 +9,11 @@
 
         boot.loader = {
           efi.canTouchEfiVariables = true;
-          systemd-boot.enable = false;
+          systemd-boot.enable = true;
           timeout = 5;
 
           grub = {
-            enable = true;
+            enable = false;
             device = "nodev";
             efiSupport = true;
             efiInstallAsRemovable = false;

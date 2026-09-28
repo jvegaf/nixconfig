@@ -21,6 +21,7 @@
           dnsutils
           ffmpeg
           github-cli
+          lazygit
           jq
           ookla-speedtest
           texliveFull

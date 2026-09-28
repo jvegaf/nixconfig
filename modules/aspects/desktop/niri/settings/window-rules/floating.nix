@@ -8,7 +8,6 @@
         # Terminal Scratchpad
         {
           match._props.app-id = "kitty-scratchpad";
-          open-on-output = "DP-1";
           open-floating = true;
           default-column-width.proportion = 0.6;
           default-window-height.proportion = 0.6;
@@ -22,18 +21,15 @@
 
         # Steam Notifications Bottom Right Corner
         {
-          match._props = {
-            app-id = "steam";
-            title = "^notificationtoasts_\\d+_desktop$";
-          };
-
-          # open-on-output = "DP-1";
-          open-focused = false;
+          match._props.app-id = "org.gnome.Nautilus";
+          open-floating = true;
+          default-column-width.proportion = 0.6;
+          default-window-height.proportion = 0.6;
 
           default-floating-position._props = {
-            x = 10;
-            y = 10;
-            relative-to = "bottom-right";
+            x = 410;
+            y = 222;
+            relative-to = "top-left";
           };
         }
 
@@ -44,7 +40,6 @@
             title = "^Picture-in-Picture$";
           };
 
-          open-on-output = "DP-1";
           open-floating = true;
           open-focused = false;
 

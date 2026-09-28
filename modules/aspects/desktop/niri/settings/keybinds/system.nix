@@ -14,7 +14,7 @@
 
         # Applications
         "Mod+B".spawn = "firefox";
-        "Mod+T".spawn = "kitty";
+        "Mod+Return".spawn = "kitty";
         "Mod+S".spawn = [
           "kitty"
           "--class"

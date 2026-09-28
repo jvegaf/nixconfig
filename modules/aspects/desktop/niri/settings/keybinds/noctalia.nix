@@ -5,8 +5,8 @@
 
     homeManager = {
       wayland.windowManager.niri.settings.binds = {
-        "Alt+Space".spawn-sh = "noctalia msg panel-toggle launcher";
-        "Mod+A".spawn-sh = "noctalia msg panel-toggle control-center";
+        "Mod+D".spawn-sh = "noctalia msg panel-toggle launcher";
+        "Mod+Comma".spawn-sh = "noctalia msg panel-toggle control-center";
         "Mod+Alt+L".spawn-sh = "noctalia msg session lock";
         "Mod+Pause".spawn-sh = "noctalia msg notification-dnd-toggle";
         "Pause".spawn-sh = "noctalia msg mic-mute";
