@@ -11,9 +11,12 @@
             corefonts
             jetbrains-mono
             nerd-fonts.commit-mono
+            nerd-fonts.fantasque-sans-mono
+            nerd-fonts.fira-code
             nerd-fonts.jetbrains-mono
             noto-fonts
             noto-fonts-color-emoji
+            open-sans
           ];
 
           fontconfig = {

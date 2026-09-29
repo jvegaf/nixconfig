@@ -37,6 +37,15 @@
           nixfmt
           nvd
         ];
+
+        home.shellAliases = {
+          rmd = "rm -rf";
+          jctl = "journalctl -p 3 -xb";
+          grep = "grep --color=auto";
+          bt = "btop";
+          gb = "nix-collect-garbage -d";
+          clean = "nh clean all --keep 3";
+        };
       };
   };
 }

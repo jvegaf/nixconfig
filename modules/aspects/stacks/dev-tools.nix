@@ -8,6 +8,9 @@
       <pkt/gpg>
       <pkt/keyd>
       <pkt/lazygit>
+      <pkt/ai-tools>
+      <pkt/pi-agent>
+      <pkt/opencode>
     ];
 
     nixos =

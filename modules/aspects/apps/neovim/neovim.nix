@@ -15,7 +15,7 @@
       <pkt/neovim-keymaps>
       <pkt/neovim-plugins>
     ];
-    
+
     nixos = {
       # Sidekick stack (see _config/plugins/sidekick.nix).
       unfree.packages = [
@@ -80,6 +80,10 @@
             underline = true,
           })
         '';
+      };
+
+      home.shellAliases = {
+        v = "nvim";
       };
     };
 

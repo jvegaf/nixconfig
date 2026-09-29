@@ -36,5 +36,7 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hardware.url = "github:NixOS/nixos-hardware/master";
   };
 }

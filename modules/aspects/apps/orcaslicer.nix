@@ -4,13 +4,12 @@
       {
         config,
         pkgs,
-        user,
         ...
       }:
 
       let
         # Ruta absoluta a tu repositorio de dotfiles
-        dotfilesDir = "/home/${user.username}/nixdots/dotfiles";
+        dotfilesDir = "/home/th3g3ntl3man/nixconfig/dotfiles";
       in
       {
         home.packages = with pkgs; [

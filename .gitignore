@@ -3,3 +3,5 @@
 .pre-commit-config.yaml
 result
 *.qcow2
+/dotfiles/OrcaSlicer/cache
+/dotfiles/OrcaSlicer/log

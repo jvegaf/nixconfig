@@ -14,11 +14,13 @@
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
+    hardware.url = "github:NixOS/nixos-hardware/master";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     import-tree.url = "github:denful/import-tree";
+    llm-agents.url = "github:numtide/llm-agents.nix";
     niri-nix.url = "git+https://codeberg.org/BANanaD3V/niri-nix";
     nix-flatpak.url = "github:gmodena/nix-flatpak/";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -31,7 +33,12 @@
       url = "github:noctalia-dev/noctalia-greeter";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    omp-nix.url = "git+https://git.molez.org/mandlm/omp-nix";
     pixie-sddm.url = "github:xCaptaiN09/pixie-sddm";
+    superpowers = {
+      url = "github:obra/superpowers";
+      flake = false;
+    };
     yazi = {
       url = "github:sxyazi/yazi";
       inputs.nixpkgs.follows = "nixpkgs";

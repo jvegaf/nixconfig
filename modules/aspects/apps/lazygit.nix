@@ -1,6 +1,9 @@
 {
   pkt.lazygit = {
     homeManager = {
+      home.shellAliases = {
+        g = "lazygit";
+      };
       programs.lazygit = {
         enable = true;
         settings = {

@@ -7,7 +7,8 @@
       <pkt/nautilus>
       <pkt/openrazer>
       <pkt/onepassword>
-      # <pkt/sunshine>
+      <pkt/zathura>
+      <pkt/orcaslicer>
       # <pkt/tailscale>
     ];
 

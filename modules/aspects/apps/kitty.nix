@@ -16,7 +16,7 @@
 
             font = {
               name = "JetBrainsMono Nerd Font";
-              size = if pkgs.stdenv.isDarwin then 14 else 11;
+              size = 11;
             };
 
             settings = {

@@ -13,6 +13,9 @@
       <pkt/neovim>
       <pkt/yazi>
       <pkt/ns>
+      <pkt/zsh>
+      <pkt/tldr>
+      <pkt/tmux>
     ];
 
     homeManager =
@@ -23,6 +26,13 @@
           fzf
           timg
         ];
+        home.shellAliases = {
+          dots = "cd ~/nixconfig";
+          doc = "cd ~/Documents";
+          dw = "cd ~/Downloads";
+          dt = "cd ~/Desktop";
+          cdc = "cd ~/Code";
+        };
       };
 
   };
