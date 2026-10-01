@@ -5,3 +5,4 @@ result
 *.qcow2
 /dotfiles/OrcaSlicer/cache
 /dotfiles/OrcaSlicer/log
+/.atl

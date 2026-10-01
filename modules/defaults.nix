@@ -8,7 +8,7 @@
     ];
 
     nixos = {
-      system.stateVersion = "26.11";
+      system.stateVersion = "26.05";
 
       nixpkgs.config.allowUnfree = true;
       nix = {
@@ -52,7 +52,8 @@
 
     homeManager = {
       home = {
-        stateVersion = "26.11";
+        backupFileExtension = "backup";
+        stateVersion = "26.05";
       };
     };
 

@@ -24,7 +24,7 @@
     flake-file.url = "github:vic/flake-file";
 
     nixpkgs = {
-      url = "github:NixOS/nixpkgs/nixos-unstable";
+      url = "github:NixOS/nixpkgs/nixos-2605";
     };
 
     home-manager = {
