@@ -6,13 +6,13 @@
     homeManager = { pkgs, ... }: {
       programs.nixvim = {
 
-        extraPlugins = with pkgs.vimPlugins; [ git-conflict-nvim ];
-
-        extraConfigLua = ''
-          require('git-conflict').setup({
-            default_opener = 'Trouble'
-          })
-        '';
+        # extraPlugins = with pkgs.vimPlugins; [ git-conflict-nvim ];
+        #
+        # extraConfigLua = ''
+        #   require('git-conflict').setup({
+        #     default_opener = 'Trouble'
+        #   })
+        # '';
 
         plugins.gitsigns = {
           enable = true;

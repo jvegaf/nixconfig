@@ -16,15 +16,15 @@
       <pkt/neovim-plugins>
     ];
 
-    nixos = {
-      # Sidekick stack (see _config/plugins/sidekick.nix).
-      unfree.packages = [
-        "claude-code"
-        "copilot-language-server"
-        "github-copilot-cli"
-        "git-conflict.nvim"
-      ];
-    };
+    # nixos = {
+    #   # Sidekick stack (see _config/plugins/sidekick.nix).
+    #   unfree.packages = [
+    #     "claude-code"
+    #     "copilot-language-server"
+    #     "github-copilot-cli"
+    #     "git-conflict.nvim"
+    #   ];
+    # };
 
     homeManager = {
       imports = [ inputs.nixvim.homeModules.nixvim ];
