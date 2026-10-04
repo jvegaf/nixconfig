@@ -21,6 +21,7 @@
         <pkt/terminal>
         <pkt/avahi>
         <pkt/internationalization>
+        <pkt/networking>
         <pkt/nix>
         <pkt/timezone>
         <pkt/docker>
@@ -46,11 +47,6 @@
           systemPackages = with pkgs; [
 
           ];
-
-          networking.networkmanager.enable = true;
-          networking.wireless.enable = lib.mkDefault false;
-
-          services.resolved.enable = true;
 
           shellAliases = {
             freb = "sudo nixos-rebuild switch --flake ~/nixconfig#minis --log-format internal-json -v |& nom --json";
