@@ -3,7 +3,7 @@
   den.aspects.th3g3ntl3man = {
     includes = [
       <den/primary-user>
-      (<den/user-shell> "fish")
+      (<den/user-shell> "zsh")
     ];
 
     nixos = {
@@ -11,9 +11,9 @@
         isNormalUser = true;
         description = "The Gentleman";
 
-        # openssh.authorizedKeys.keys = [
-        #   "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJSHAzMVnHblW0xy4tdMxCZBpEsDRlh+khOMmYzJs5K/"
-        # ];
+        openssh.authorizedKeys.keys = [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJUewbgxGwP1TV/lJgak5Ng9gCd/0B3Vw7UfcGnexxxG"
+        ];
       };
     };
 
