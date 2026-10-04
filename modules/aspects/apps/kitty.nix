@@ -27,7 +27,7 @@
               window_padding_width = 8;
 
               # workaround for https://github.com/nix-darwin/nix-darwin/issues/1237
-              shell = "/etc/profiles/per-user/${user.userName}/bin/fish";
+              shell = "/etc/profiles/per-user/${user.userName}/bin/zsh";
             };
           };
         };

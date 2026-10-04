@@ -8,8 +8,6 @@
       <pkt/lazygit>
       <pkt/gpg>
       <pkt/keyd>
-      <pkt/ai-tools>
-      <pkt/pi-agent>
       <pkt/opencode>
     ];
 
@@ -31,6 +29,7 @@
           tldr
           tree
           wget
+          nodejs
 
           # gui
           postman

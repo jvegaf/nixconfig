@@ -6,22 +6,22 @@
 }:
 {
   flake-file.inputs = {
-    llm-agents.url = "github:numtide/llm-agents.nix";
+    # llm-agents.url = "github:numtide/llm-agents.nix";
     superpowers = {
       url = "github:obra/superpowers";
       flake = false;
     };
   };
 
-  pkt.opencode = { inputs, ... }: {
-    nixos = {
-      nix.settings = {
-        extra-substituters = [ "https://cache.numtide.com" ];
-        extra-trusted-public-keys = [
-          "niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g="
-        ];
-      };
-    };
+  pkt.opencode = { inputs, pkgs, ... }: {
+    # nixos = {
+    #   nix.settings = {
+    #     extra-substituters = [ "https://cache.numtide.com" ];
+    #     extra-trusted-public-keys = [
+    #       "niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g="
+    #     ];
+    #   };
+    # };
 
     homeManager =
       let
@@ -34,9 +34,9 @@
       in
       {
 
-        programs.opencode = { pkgs, inputs, ... }: {
+        programs.opencode = {
           enable = true;
-          package = inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode;
+          # package = inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode;
           enableMcpIntegration = true;
 
           settings = {

@@ -45,11 +45,6 @@
 
           ];
 
-          hardware.graphics = {
-            enable = true;
-            enable32Bit = true;
-          };
-
           shellAliases = {
             freb = "sudo nixos-rebuild switch --flake ~/nixconfig#surface --log-format internal-json -v |& nom --json";
           };
