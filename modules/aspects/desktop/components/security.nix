@@ -11,11 +11,5 @@
         polkit.enable = true;
       };
     };
-
-    darwin = {
-      security = {
-        pam.services.sudo_local.touchIdAuth = true;
-      };
-    };
   };
 }

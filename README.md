@@ -31,3 +31,10 @@ See [modules/vm.nix](modules/vm.nix)
 ```console
 nix run .#vm
 ```
+
+- WSL
+
+```console
+nix run home-manager -- switch --flake .#nixos@x86_64-linux
+
+```

@@ -11,6 +11,8 @@
       <pkt/nix>
       <pkt/ssh>
       <pkt/terminal>
+      <pkt/lazygit>
+      <pkt/opencode>
     ];
 
     homeManager = {

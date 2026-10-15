@@ -11,10 +11,15 @@
       <pkt/nix>
       <pkt/ssh>
       <pkt/terminal>
+      <pkt/lazygit>
+      <pkt/opencode>
     ];
 
     homeManager = {
       programs.home-manager.enable = true;
+      includes = [
+
+      ];
     };
   };
 }

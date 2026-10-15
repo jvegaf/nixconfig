@@ -18,14 +18,10 @@
           # cmdline
           cloc
           exiftool
-          distrobox
           dnsmasq
           dnsutils
-          ffmpeg
           github-cli
           jq
-          ookla-speedtest
-          texliveFull
           tldr
           tree
           wget
@@ -33,7 +29,6 @@
 
           # gui
           postman
-          rpi-imager
           termius
           vscode
           zed-editor
