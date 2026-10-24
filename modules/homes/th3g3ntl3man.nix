@@ -12,7 +12,7 @@
       <pkt/ssh>
       <pkt/terminal>
       <pkt/lazygit>
-      <pkt/opencode>
+      # <pkt/opencode>
     ];
 
     homeManager = {

@@ -6,7 +6,6 @@
     homeManager = {
       programs.nixvim = {
 
-
         lsp = {
           servers = {
             bashls.enable = true;
@@ -14,7 +13,7 @@
             clangd.enable = true;
             cssls.enable = true;
             # gopls.enable = true;
-            jdtls.enable = true;
+            # jdtls.enable = true;
             html.enable = true;
             jsonls.enable = true;
             just.enable = true;
@@ -97,7 +96,7 @@
               expose_as_code_action = "all";
             };
           };
-          jdtls.enable = true;
+          # jdtls.enable = true;
           # otter.enable = true;
         };
 

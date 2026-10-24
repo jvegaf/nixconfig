@@ -37,6 +37,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hardware.url = "github:NixOS/nixos-hardware/master";
+    # TODO: migrate to each host
+    # hardware.url = "github:NixOS/nixos-hardware/master";
   };
 }

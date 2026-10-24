@@ -14,7 +14,6 @@
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
-    hardware.url = "github:NixOS/nixos-hardware/master";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -33,10 +32,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     pixie-sddm.url = "github:xCaptaiN09/pixie-sddm";
-    superpowers = {
-      url = "github:obra/superpowers";
-      flake = false;
-    };
     yazi = {
       url = "github:sxyazi/yazi";
       inputs.nixpkgs.follows = "nixpkgs";

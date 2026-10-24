@@ -60,6 +60,21 @@
             relative-to = "bottom-right";
           };
         }
+        {
+          match._props = {
+            app-id = "Tor Browser";
+            title = "^Picture-in-Picture$";
+          };
+
+          open-floating = true;
+          open-focused = false;
+
+          default-floating-position._props = {
+            x = 10;
+            y = 10;
+            relative-to = "bottom-right";
+          };
+        }
 
         # Gnome Calculator
         {

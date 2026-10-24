@@ -32,7 +32,7 @@
         # home.file.".face.icon".source = ./avatar.png;
 
         # explicitly set home.pointerCursor.enable
-        home.pointerCursor.enable = true;
+        # home.pointerCursor.enable = true;
       };
     };
 

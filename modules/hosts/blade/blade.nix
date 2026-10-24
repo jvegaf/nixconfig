@@ -25,6 +25,7 @@
         <pkt/noctalia>
         <pkt/noctalia-greeter>
         <pkt/terminal>
+        <pkt/opencode>
       ];
 
       homeManager = {
@@ -32,7 +33,7 @@
         # home.file.".face.icon".source = ./avatar.png;
 
         # explicitly set home.pointerCursor.enable
-        home.pointerCursor.enable = true;
+        # home.pointerCursor.enable = true;
       };
     };
 

@@ -8,7 +8,6 @@
       <pkt/lazygit>
       <pkt/gpg>
       <pkt/keyd>
-      <pkt/opencode>
     ];
 
     nixos =
@@ -28,9 +27,9 @@
           nodejs
 
           # gui
-          postman
+          # postman
           termius
-          vscode
+          # vscode
           zed-editor
 
         ];
