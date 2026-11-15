@@ -7,7 +7,7 @@
 {
   flake-file.inputs = {
     gentle-ai-nix.url = "github:0xErwin1/gentle-ai-nix";
-    # gentle-ai-nix.inputs.nixpkgs.follows = "nixpkgs";
+    gentle-ai-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   pkt.gentle-ai = { inputs, pkgs, ... }: {

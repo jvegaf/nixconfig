@@ -14,7 +14,10 @@
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
-    gentle-ai-nix.url = "github:0xErwin1/gentle-ai-nix";
+    gentle-ai-nix = {
+      url = "github:0xErwin1/gentle-ai-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

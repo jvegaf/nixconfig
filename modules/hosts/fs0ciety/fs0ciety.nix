@@ -25,7 +25,7 @@
         <pkt/noctalia>
         <pkt/noctalia-greeter>
         <pkt/terminal>
-        <pkt/opencode>
+        <pkt/gentle-ai>
       ];
 
       homeManager = {
