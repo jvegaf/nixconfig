@@ -5,7 +5,6 @@
       # <pkt/flatpak>
       <pkt/kitty>
       <pkt/nautilus>
-      <pkt/openrazer>
       <pkt/onepassword>
       <pkt/zathura>
       <pkt/orcaslicer>

@@ -19,6 +19,7 @@
     provides.th3g3ntl3man = {
       includes = [
         <pkt/desktop-apps>
+        <pkt/openrazer>
         <pkt/dev-tools>
         <pkt/niri>
         <pkt/nixos-base>
