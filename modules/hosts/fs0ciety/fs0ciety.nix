@@ -5,7 +5,7 @@
   ...
 }:
 {
-  # ASUS AMD Gaming Desktop
+  # Xiaomi Notebook Pro 15 (2018)
   den.hosts.x86_64-linux.fs0ciety = {
     users.th3g3ntl3man.classes = [ "homeManager" ];
   };

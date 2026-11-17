@@ -43,19 +43,19 @@
             # ~/.pi/agent, which is what this configuration renders.
             launcher.enable = true;
             # mcpServers = sharedServers;
-            provisionPackages = true;
+            # provisionPackages = true;
 
             # The install commands name packages without naming versions, so their
             # text never changes while what npm resolves them to does. Stamped by
             # that text they run once, which froze gentle-pi at the version the
             # first activation happened to install.
-            provisionRefresh = true;
+            # provisionRefresh = true;
 
             # gentle-pi's postinstall downloads its private, package-pinned Gentle AI
             # binary and extracts it with /usr/bin/tar or /bin/tar by absolute path.
             # NixOS lacks those host paths, so normal provisioning defers that lifecycle
             # to the compatibility repair below; the global CLI is not an equivalent.
-            provisionEnvironment.GENTLE_PI_SKIP_GENTLE_AI_INSTALL = "1";
+            # provisionEnvironment.GENTLE_PI_SKIP_GENTLE_AI_INSTALL = "1";
             settings.theme = "Gentleman-Cute";
             # gentle-shell provides the compact codemode tool; loading Pi's built-in
             # implementation as well emits an extension collision at startup.
