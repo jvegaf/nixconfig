@@ -2,7 +2,7 @@
 {
   pkt.dev-tools = {
     includes = [
-      <pkt/devenv>
+      # <pkt/devenv>
       <pkt/docker>
       <pkt/git>
       <pkt/lazygit>
