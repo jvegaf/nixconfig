@@ -18,6 +18,11 @@
 
         keymaps = [
           {
+            key = "<leader>e";
+            action.__raw = "function() Snacks.explorer() end";
+            options.desc = "File Tree";
+          }
+          {
             key = "<leader><space>";
             action.__raw = "function() Snacks.picker.smart() end";
             options.desc = "Smart Find Files";
@@ -287,8 +292,8 @@
             settings = {
               bigfile.enabled = true;
               explorer = {
-                enabled = false;
-                # replace_netrw = true;
+                enabled = true;
+                replace_netrw = true;
               };
               input = {
                 enabled = true;
@@ -307,11 +312,11 @@
               };
               picker = {
                 enabled = true;
-                # sources = {
-                #   explorer = {
-                #     auto_close = true;
-                #   };
-                # };
+                sources = {
+                  explorer = {
+                    auto_close = true;
+                  };
+                };
                 win = {
                   input = {
                     keys.__raw = ''
