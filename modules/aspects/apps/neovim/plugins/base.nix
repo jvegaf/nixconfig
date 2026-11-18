@@ -30,6 +30,7 @@
               check_ts = true;
             };
           };
+          mini-align.enable = true;
           mini-surround = {
             enable = true;
             settings.mappings = {

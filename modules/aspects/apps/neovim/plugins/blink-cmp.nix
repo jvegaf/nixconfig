@@ -6,13 +6,21 @@
     homeManager = { pkgs, ... }: {
       programs.nixvim = {
 
-        extraPlugins = [ pkgs.vimPlugins.blink-cmp-conventional-commits ];
+        extraPlugins = with pkgs; [
+          vimPlugins.blink-nerdfont-nvim
+          vimPlugins.blink-ripgrep-nvim
+          vimPlugins.blink-emoji-nvim
+          vimPlugins.blink-cmp-tmux
+        ];
 
         plugins = {
           blink-cmp = {
             enable = true;
             settings = {
               completion = {
+                menu = {
+                  border = "rounded";
+                };
                 documentation = {
                   auto_show = true;
                   auto_show_delay_ms = 500;
@@ -29,28 +37,35 @@
               sources = {
                 default = [
                   "lsp"
-                  "conventional_commits"
+                  "ripgrep"
                   "path"
                   "snippets"
-                  # "markview"
+                  "nerdfont"
                   "emoji"
                   "buffer"
-                  "ripgrep"
+                  "tmux"
                 ];
                 providers = {
                   lsp = {
                     fallbacks = [ ];
                     score_offset = 10;
                   };
-                  conventional_commits = {
-                    module = "blink-cmp-conventional-commits";
-                    name = "Conventional Commits";
-                    enabled.__raw = ''
-                      function()
-                        return vim.bo.filetype == 'gitcommit'
-                      end
-                    '';
-                    score_offset = 5;
+                  snippets = {
+                    opts = {
+                      friendly_snippets = true;
+                      extended_filetypes = {
+                        sh = { "shelldoc" };
+                      };
+                    };
+                  };
+                  nerdfont = {
+                    module = "blink-nerdfont";
+                    name = "Nerd Fonts";
+                    score_offset = 15;
+                    opts = {
+                      insert= true;
+                      trigger = "nf";
+                    };
                   };
                   emoji = {
                     module = "blink-emoji";
@@ -58,6 +73,7 @@
                     score_offset = 15;
                     opts = {
                       insert = true;
+                      trigger = ":";
                     };
                   };
                   ripgrep = {
@@ -77,9 +93,6 @@
                 };
               };
 
-              snippets = {
-                preset = "luasnip";
-              };
 
               signature = {
                 enabled = true;
