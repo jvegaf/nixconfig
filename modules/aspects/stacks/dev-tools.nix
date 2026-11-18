@@ -8,7 +8,6 @@
       <pkt/lazygit>
       <pkt/gpg>
       <pkt/keyd>
-      <pkt/gentle-ai>
     ];
 
     nixos =
