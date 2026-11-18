@@ -1,6 +1,6 @@
 { inputs, __findFile, ... }:
 {
-  den.aspects.kangaroo = {
+  den.aspects.fs0ciety = {
     includes = [ <test/vmvariant> ];
   };
 
@@ -13,10 +13,10 @@
           { }
         else
           {
-            vm-kangaroo = pkgs.writeShellApplication {
-              name = "vm-kangaroo";
+            vm-fs0ciety = pkgs.writeShellApplication {
+              name = "vm-fs0ciety";
               text = ''
-                ${inputs.self.nixosConfigurations.kangaroo.config.system.build.vm}/bin/run-kangaroo-vm "$@"
+                ${inputs.self.nixosConfigurations.fs0ciety.config.system.build.vm}/bin/run-fs0ciety-vm "$@"
               '';
             };
           };
