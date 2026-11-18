@@ -11,7 +11,6 @@
         terminal = "tmux-256color";
         extraConfig = ''
           set -as terminal-features ",alacritty*:RGB"
-          bind -n r source-file ~/.config/tmux/tmux.conf \; display "Reloaded!"
 
           bind C-Left resize-pane -L 5
           bind C-Right resize-pane -R 5

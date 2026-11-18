@@ -23,7 +23,8 @@
         <pkt/niri>
         <pkt/nixos-base>
         <pkt/noctalia>
-        <pkt/noctalia-greeter>
+        # <pkt/noctalia-greeter>
+        <pkt/ly>
         <pkt/terminal>
       ];
 
