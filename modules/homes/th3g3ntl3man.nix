@@ -6,7 +6,7 @@
 
   den.aspects.th3g3ntl3man = {
     includes = [
-      <pkt/devenv>
+      # <pkt/devenv>
       <pkt/git>
       <pkt/nix>
       <pkt/ssh>

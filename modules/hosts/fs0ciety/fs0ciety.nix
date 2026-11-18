@@ -25,7 +25,6 @@
         <pkt/noctalia>
         <pkt/noctalia-greeter>
         <pkt/terminal>
-        <pkt/gentle-ai>
       ];
 
       homeManager = {
@@ -61,7 +60,7 @@
           ];
 
           shellAliases = {
-            freb = "sudo nixos-rebuild switch --flake ~/nixconfig#fs0ciety --log-format internal-json -v |& nom --json";
+            freb = "nix run .#fs0ciety -- switch";
           };
           variables = {
             POWERDEVIL_NO_DDCUTIL = "1";

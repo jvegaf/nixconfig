@@ -2,12 +2,13 @@
 {
   pkt.dev-tools = {
     includes = [
-      # <pkt/devenv>
+      <pkt/devenv>
       <pkt/docker>
       <pkt/git>
       <pkt/lazygit>
       <pkt/gpg>
       <pkt/keyd>
+      <pkt/gentle-ai>
     ];
 
     nixos =
@@ -25,6 +26,7 @@
           tree
           wget
           nodejs
+          just
 
           # gui
           # postman
