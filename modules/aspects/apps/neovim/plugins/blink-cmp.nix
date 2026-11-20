@@ -54,7 +54,7 @@
                     opts = {
                       friendly_snippets = true;
                       extended_filetypes = {
-                        sh = { "shelldoc" };
+                        sh = "shelldoc";
                       };
                     };
                   };
@@ -63,7 +63,7 @@
                     name = "Nerd Fonts";
                     score_offset = 15;
                     opts = {
-                      insert= true;
+                      insert = true;
                       trigger = "nf";
                     };
                   };
@@ -92,7 +92,6 @@
                   };
                 };
               };
-
 
               signature = {
                 enabled = true;
